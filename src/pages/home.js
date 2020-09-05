@@ -4,7 +4,7 @@ import Posts from '../pages/posts'
 const Home = () => {  
     return (
         <div>
-          {/* <h1>Hello from Home.</h1>  */}
+          {/* <h1>Hello from Home</h1>  */}
           <Posts/>
         </div>
     ) 
