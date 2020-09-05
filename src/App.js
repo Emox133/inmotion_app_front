@@ -25,10 +25,10 @@ function App() {
         logout()
       } else {
         axios.defaults.headers.common = {'Authorization': `Bearer ${token}`}
-        getLogedInUser()
-        getNotifications()
         setAuthenticated()
+        getLogedInUser()
         getAllPosts()
+        getNotifications()
       }
     }
   }, [token, getLogedInUser, logout, setAuthenticated, getAllPosts, getNotifications])
