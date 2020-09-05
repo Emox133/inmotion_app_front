@@ -5,7 +5,7 @@ import App from './App'
 import axios from 'axios'
 import {AppContext} from './context/context'
 
-axios.defaults.baseURL = 'https://inmotion-app-b.herokuapp.com/'
+axios.defaults.baseURL = 'https://inmotion-app-b.herokuapp.com/api/v1'
 
 ReactDOM.render(
   <React.StrictMode>
