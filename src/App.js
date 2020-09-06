@@ -17,21 +17,21 @@ function App() {
   
   const token = localStorage.getItem('Bearer')
   
-  useEffect(() => {
-    if(token) {
-      const decoded = jwtDecode(token)
-      if(new Date(decoded.exp * 1000) < new Date()) {
-        // expired
-        logout()
-      } else {
-        axios.defaults.headers.common = {'Authorization': `Bearer ${token}`}
-        setAuthenticated()
-        getLogedInUser()
-        getAllPosts()
-        getNotifications()
-      }
-    }
-  }, [token, getLogedInUser, logout, setAuthenticated, getAllPosts, getNotifications])
+  // useEffect(() => {
+  //   if(token) {
+  //     const decoded = jwtDecode(token)
+  //     if(new Date(decoded.exp * 1000) < new Date()) {
+  //       // expired
+  //       logout()
+  //     } else {
+  //       axios.defaults.headers.common = {'Authorization': `Bearer ${token}`}
+  //       setAuthenticated()
+  //       getLogedInUser()
+  //       getAllPosts()
+  //       getNotifications()
+  //     }
+  //   }
+  // }, [token, getLogedInUser, logout, setAuthenticated, getAllPosts, getNotifications])
   
   
   let app = (
