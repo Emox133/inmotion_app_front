@@ -35,7 +35,7 @@ function App() {
   
   
   let app = (
-    <Router>  
+    <Router basename="/">  
       <Navbar />
         <Switch>
           <Route exact path="/">
