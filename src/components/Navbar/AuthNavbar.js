@@ -29,8 +29,8 @@ const AuthNavbar = (props) => {
                 <NotificationBell notifications={notifications}/>
                 {adminPanel}
                 <button className="btn btn--logout" onClick={() => logout(props)}>Logout</button>
-                {props.location.pathname === '/' ? content : null}
-                {open && props.location.pathname === '/' ? <CreatePost /> : null}
+                {props.location.pathname === '/posts' ? content : null}
+                {open && props.location.pathname === '/posts' ? <CreatePost /> : null}
             </nav>
         </div>
     )
