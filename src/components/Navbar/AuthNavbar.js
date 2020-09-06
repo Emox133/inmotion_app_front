@@ -24,7 +24,7 @@ const AuthNavbar = (props) => {
     return (
         <div>
             <nav className="navbar">
-                <Link className="navbar__link" to="/">Home</Link>
+                <Link className="navbar__link" to="/posts">Home</Link>
                 <Link className="navbar__link" to="/me">My Profile</Link>
                 <NotificationBell notifications={notifications}/>
                 {adminPanel}

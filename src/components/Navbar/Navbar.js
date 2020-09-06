@@ -11,7 +11,7 @@ const Navbar = () => {
         <AuthNavbar/>
     ) : (
         <nav className="navbar">
-            <Link className="navbar__link" to="/signup">Signup</Link>
+            <Link className="navbar__link" to="/">Signup</Link>
             <Link className="navbar__link" to="/login">Login</Link>
         </nav>
     )

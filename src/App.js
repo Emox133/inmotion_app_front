@@ -39,11 +39,11 @@ function App() {
       <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Signup />
           </Route>
           
-          <Route path="/signup">
-            <Signup />
+          <Route path="/posts">
+            <Home />
           </Route>
   
           <Route path="/login"> 

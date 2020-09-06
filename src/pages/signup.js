@@ -37,7 +37,7 @@ const Signup = props => {
         axios.post('/users/signup', data).then(res => {
             console.log(res)
             setAuthHeader(res.data.token)
-            props.history.push('/')
+            props.history.push('/posts')
             props.history.go(0)
         }).catch(err => {
             console.log(err.response)
