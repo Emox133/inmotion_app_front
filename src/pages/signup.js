@@ -41,6 +41,7 @@ const Signup = props => {
             props.history.go(0)
         }).catch(err => {
             console.log(err.response)
+            alert(err.response.data.message)
         })
 
     }

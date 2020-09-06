@@ -1,4 +1,4 @@
-import React, {useConte} from 'react'
+import React from 'react'
 import {VscBell} from 'react-icons/vsc'
 
 const NotificationBell = (props) => {
